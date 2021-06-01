@@ -1,0 +1,38 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+#container {
+  width: 1200px;
+  margin: 20px auto;
+}
+#header {
+  width: 100%;
+  height: 120px;
+  background-color: aquamarine;
+}
+#left-sidebar{
+  float: left;
+  width: 240px;
+  height: 600px;
+  background-color: burlywood;
+}
+#contents {
+  float: left;
+   width: 780px;
+   height: 600px;
+   background-color: greenyellow;
+}
+#right-sidebar {
+  float: right;
+  width: 180px;
+  height: 600px;
+  background-color: hotpink;
+}
+#footer {
+  width: 100%;
+  height: 120px;
+  background-color: lightblue;
+  clear: both;
+}

@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;    
+}
+h1{
+    margin-bottom: 0px;
+}
+hr {
+    border: 0px;
+    width: 750px;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+#menu {
+    padding-left: 40px;
+}
+#fee {
+    background-color: #f6fdf7;
+    border: 1px solid #bcd3be;  
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+}
+#comment {
+    background-color: #f6fdf7;
+    border: 1px solid #bcd3be;  
+    width: 700px;
+    margin: 20px;
+    padding: 10px;
+    line-height: 150%;
+}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리 배치도</title>
+</head>
+<body>
+  <h1>시외버스 자리 배치도</h1>
+  <script>
+    /*
+    var memNum = prompt("입장객은 몇 명인가요?");  // 전체 입장객 
+    var colNum = prompt("한 줄에 몇 명씩 앉습니까?");  // 한 줄에 앉을 사람
+
+    if (memNum % colNum === 0) 
+      rowNum = parseInt(memNum / colNum);
+    else
+      rowNum = parseInt(memNum / colNum) + 1;
+
+    document.write("모두 " + rowNum + "개의 줄이 필요합니다.");
+    */
+
+    var person = 41;
+    var personInline = 4;
+    var row = person/personInline;
+    var col = personInline + 1;
+
+    document.write("<table>");
+    
+      var seatN = 1;
+     
+      for (let i = 1; i <= row; i++){
+        document.write("<tr>");
+          if ( i < row - 1 ){
+            for(let j = 1; j <= col; j++){
+              if ( j != 3 ){              
+                document.write("<td> 좌석" + seatN + "</td>" );
+                seatN++;              
+              } else {
+                document.write("<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>");
+              }                    
+            }
+          } else {
+            for (let j = 1; j <= col; j++){
+              document.write("<td> 좌석" + seatN + "</td>" );
+              seatN++;
+            }
+          }
+          if (seatN > person) {
+            break;
+          }                  
+      }      
+
+  </script>
+</body>
+</html>

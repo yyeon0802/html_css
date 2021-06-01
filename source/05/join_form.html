@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    ul{
+        list-style-type: none;
+    }
+    .cols li{
+        display: inline-block;
+    }
+    .cols li.col1{
+        width: 150px;
+        text-align: right;
+    }
+    .cols li.col2{
+        width: 350px;
+    }
+    .cols li.col2 input.hp{
+        width: 35px;
+    }
+#mem_form{
+
+}
+
+</style>
+<body>
+    <h3>가입 양식</h3>
+    <form id=mem_form>
+        <ul>
+            <li>
+                <ul class="cols">
+                    <li class="col1">아이디 :</li>
+                    <li class="col2"><input type="text" autofocus></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">비밀번호 :</li>
+                    <li class="col2"><input type="password" placeholder="비밀번호를 입력하세요"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">비밀번호 확인 :</li>
+                    <li class="col2"><input type="text" disabled></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">이름 :</li>
+                    <li class="col2"><input type="text"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">성별 :</li>
+                    <li class="col2"><input type="radio" name="gender" selected>여성 
+                        <input type="radio" name="gender">남성</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">휴대번호 :</li>
+                    <li class="col2">
+                        <select>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>017</option>
+                        </select> -
+                        <input class="hp" type="text"> - <input class="hp" type="text">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">이메일 :</li>
+                    <li class="col2"><input type="text" id="email1"> @
+                        <select id="email2">
+                            <option>선택</option>
+                            <option>naver.com</option>
+                            <option>hanmail.com</option>
+                            <option>gmail.com</option>
+                        </select>
+                    </li>
+                </ul>
+            </li>                  
+            <li>
+                <ul class="cols">
+                    <li class="col1">이름 :</li>
+                    <li class="col2">
+                        <input type="checkbox"> 음악감상
+                        <input type="checkbox"> 독서
+                        <input type="checkbox"> 등산
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">자기소개 :</li>
+                    <li class="col2"><textarea cols="40" rows="4"></textarea></li>
+                </ul> 
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">파일첨부 :</li>
+                    <li class="col2"><input type="file"> * 2MB까지 가능</li>
+                </ul> 
+            </li>                
+        </ul>
+        <h3>이메일을 정확하게 입력하세요.</h3>
+            이메일 : <input type="email" name="myemail" required>
+            <p></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">           
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>setAttribute() 메소드 사용</title>
+    <script>
+      function add() {
+        var img=document.createElement('img');
+        img.setAttribute('src', './images/doit.jpg');
+        img.setAttribute('width', 100);
+        img.setAttribute('height', 122);
+        document.body.appendChild(img);
+      }
+    </script>
+  
+  </head>
+  <body> 
+    <a href="#" onclick="add()">이미지 추가</a>
+  </body>
+  </html>
+

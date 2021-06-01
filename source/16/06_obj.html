@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array생성자로 배열 객체 구조 선언하기</title>
+</head>
+<body>
+    <p id="car"></p>
+    <p>[Car 1 속성]</p>
+    <p id="car0"></p>
+    <p>[Car 2 속성]</p>
+    <p id="car1"></p>
+    <p>[Car 3 속성]</p>
+    <p id="car2"></p>
+    <script>
+      var car=new Array(
+        ['Sonata','blue',100],
+        ['Jeep','red',70],
+        ['Passt', 'white', 150]
+      );
+      var cname=document.getElementById("car");
+      cname.textContent="car[2][1] : " + car[2][1];
+      for ( var i=0; i<3; i++) {
+        var cname=document.getElementById("car" + i);
+        cname.textContent=car[i];
+      }
+    </script>
+  </body>
+</html> 
